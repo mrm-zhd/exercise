@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<header>
+    <style>
+        div {margin: auto; padding: 5px;}
+        .container{width:100%;position:absolute;top:10%;}
+        .box{width:250px;height:450px;background:#FFF; padding-top: 20px; border-radius: 10PX;}
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            }
+        .right {margin-left: 10px;}
+        .inputname {border: solid 1px #eeeeee; border-radius: 5px; box-shadow: #eeeeee;}
+        .inputgray {border: solid 1px #cccccc; border-radius: 5px; }
+        .inline {display: flex; position: relative;}
+        .botton { color: #FFF; background-color: #0f4c75;, 0.753); border-radius: 5px;}
+    </style>
+</header>
+<body bgcolor="#87cefa">
+    <div class="container">
+        <div class="box">
+            <div class="center">
+                <img src="D://Contenzy/pic/dfltProfile.jpg" width="50px" height="50px" class="center">
+                <h4>Payment Info</h4><br>
+            </div>
+            <div>
+                <form method="post">
+                    <div>
+                        <label>Full Name</label>
+                        <input type="text" class="inputname">
+                    </div>
+                    <div>
+                        <label>Credit Card number</label>
+                        <input type="text" class="inputgray" placeholder="1234 1234 1234 1234">
+                    </div>
+                    <div class="inline">
+                        <div><label>Exp Date</label><input type="text" class="inputgray" placeholder="MM/YY" size="10%"></div>
+                        <div><label>CVV</label><input type="password" class="inputgray" placeholder="***" size="10%"></div>
+                    </div>
+                    <div>
+                        <label>Zip Code</label>
+                        <input type="text" class="inputgray" placeholder="90210">
+                    </div>
+                    <div class="center">
+                        <input type="submit" class="botton" value="Confirm Payment">
+                    </div>
+                    <div class="center">
+                        <span>You verify that this info is correct</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>

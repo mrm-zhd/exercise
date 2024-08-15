@@ -1,0 +1,138 @@
+:root {
+  --primary-color: rgb(175, 192, 226);
+  --error-color: red;
+}
+html {
+  font-size: 16px;
+}
+body {
+  margin: 0;
+  padding: 0 20px;
+  box-sizing: border-box;
+  background-color: rgb(43, 46, 52);
+}
+
+ul {
+  li {
+    list-style-type: none;
+  }
+}
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  div {
+    ul {
+      display: none;
+    }
+  }
+}
+#main {
+  min-height: 95vh;
+  h1 {
+    color: white;
+    text-align: center;
+    font-size: 2.187rem;
+    font-weight: bold;
+    margin-bottom: 35px;
+  }
+  p {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+}
+
+#items {
+  margin: 70px 0;
+  display: grid;
+  gap: 70px;
+
+  .item {
+    background-color: rgb(13, 20, 35);
+    border-radius: 8px;
+    height: 132px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      position: absolute;
+      top: -20px;
+      left: 45%;
+    }
+    span {
+      font-size: 0.875rem;
+      font-weight: bold;
+      color: var(--primary-color);
+    }
+  }
+}
+#footer {
+  width: 100%;
+  div {
+    background-image: url("./assets/images/bg-footer.png");
+    background-position-x: center;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      height: 130px;
+      width: 250px;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  #header {
+    div {
+      img {
+        display: none;
+      }
+      ul {
+        display: flex;
+        li {
+          margin: 0 10px;
+        }
+        li:nth-child(2) {
+          color: rgb(0, 194, 255);
+        }
+      }
+    }
+  }
+  #main {
+    h1 {
+      font-size: 2.625rem;
+    }
+    p {
+      font-size: 1.25rem;
+    }
+  }
+  #items {
+    grid-template-columns: repeat(2, 1fr);
+    .item:first-child {
+      grid-area: 1/1/2/3;
+    }
+  }
+  #footer {
+    div {
+      img {
+        width: 520px;
+        height: 200px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #items {
+    grid-template-columns: repeat(3, 1fr);
+    .item:first-child {
+      grid-area: 1/1/2/2;
+    }
+  }
+}

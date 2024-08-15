@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo class and pseudo element</title>
+    <style>
+        .btn-1 {
+            background-color: blueviolet;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-1:hover {
+            padding: 15px;
+        }
+
+        .my-input {
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid lightgray;
+        }
+
+        .my-input:focus {
+            padding: 13px;
+            background-color: azure
+        }
+
+        /* 
+        .list>li:nth-child(odd) {
+            color: red;
+        } */
+        .list>li:not(:first-child) {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <button class="btn-1">click me</button>
+    <br />
+    <input type="text" class="my-input" placeholder="dddddd">
+    <br />
+    <ul class="list">
+        <li>list 1</li>
+        <li>list 2</li>
+        <li>list 3</li>
+        <li>list 4</li>
+        <li>list 5</li>
+    </ul> -->
+
+</body>
+
+</html>

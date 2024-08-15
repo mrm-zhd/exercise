@@ -1,0 +1,26 @@
+.main{
+    padding-top: 50px;
+    width: 400px;
+    height: 150px;
+    border: solid 1px #cccccc;
+    border-radius: 10px;
+    background-color: #EEEEEE;
+}
+.number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #phone{
+        margin-right: 10px;
+    }
+}
+#btn{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 20px;
+    #send{
+        margin-right: 20px;
+    }
+}
+/* test */
